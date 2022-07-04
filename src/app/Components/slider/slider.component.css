@@ -1,0 +1,46 @@
+#backgrounds {
+  width: 100vw;
+  height: 99vh;
+  position: relative;
+  background-size: cover;
+}
+
+.containers {
+  font-family: "Roboto Slab", serif;
+  background-color: rgba(255, 255, 255, 0.767);
+  color: black;
+  font-size: 10vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 auto; /* Center the text container */
+  padding: 10px;
+  width: 55%;
+  text-align: center; /* Center text */
+  position: absolute; /* Position text */
+  top: 50%; /* Position text in the middle */
+  left: 50%; /* Position text in the middle */
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: screen; /* This makes the cutout text possible */
+  border-radius: 10px;
+}
+.imagen {
+  width: 100%;
+  height: 99vh;
+}
+
+.titulo {
+  font-size: 3vw;
+  font-family: "Roboto Slab", serif;
+  margin-top: 25px;
+}
+
+.descripcion {
+  font-size: 2vw;
+  font-family: "Roboto Slab", serif;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.texto {
+  background-color: rgba(0, 0, 0, 0.251);
+  border-radius: 5px;
+}

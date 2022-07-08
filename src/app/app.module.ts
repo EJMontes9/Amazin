@@ -14,7 +14,8 @@ import { SliderComponent } from './Components/slider/slider.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SliderComponent
+    SliderComponent,
+
   ],
   imports: [
     BrowserModule,

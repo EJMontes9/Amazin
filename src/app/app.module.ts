@@ -14,10 +14,8 @@ import { SliderComponent } from './Components/slider/slider.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-<<<<<<< HEAD
-=======
-    SliderComponent
->>>>>>> Store-ads
+    SliderComponent,
+
   ],
   imports: [
     BrowserModule,

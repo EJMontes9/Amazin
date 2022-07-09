@@ -1,5 +1,4 @@
 .i{
-    /*centrar elemento*/
     display: flex;
     justify-content: center;
 }

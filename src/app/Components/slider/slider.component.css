@@ -27,6 +27,10 @@
   height: 99vh;
 }
 
+.perv-next:hover {
+  background-color: rgba(0, 0, 0, 0.112);
+}
+
 .titulo {
   font-size: 3vw;
   font-family: "Roboto Slab", serif;
@@ -36,14 +40,12 @@
 .descripcion {
   font-size: 2vw;
   font-family: "Roboto Slab", serif;
-  margin-top: 2%;
   text-align: center;
 }
 
 .texto {
-  background-color: rgba(0, 0, 0, 0.251);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.534) 0px 0px 10px;
 }
 
 .valores {
@@ -76,46 +78,22 @@
 
 /*Responsive div valores*/
 @media (max-width: 915px) {
+  .imagen {
+    height: 40vh;
+  }
+
+  #backgrounds {
+    height: 40vh;
+  }
+
+  .containers {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 760px) {
+  /*Eliminar div valores*/
   .valores {
-    width: 90vw;
+    display: none;
   }
-
-  .ulistaValores {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-  }
-
-  .icon {
-    width: 5vh;
-    height: 5vh;
-  }
-
-  .liconos {
-    font-size: 1.5vw;
-  }
-
-    .descripcion {
-        font-size: 1.5vw;
-    }
-
-    .titulo {
-        font-size: 2.5vw;
-    }
-
-    .imagen {
-        height: 30vh;
-    }
-
-    #backgrounds {
-        height: 30vh;
-    }
-
-    .containers {
-        font-size: 5vw;
-    }
-
-    .texto {
-        width: 90vw;
-    }
 }

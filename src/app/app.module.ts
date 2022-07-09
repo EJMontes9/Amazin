@@ -9,15 +9,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { SliderComponent } from './Components/slider/slider.component';
+import { RegisterComponent } from './Components/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-<<<<<<< HEAD
-=======
-    SliderComponent
->>>>>>> Store-ads
+    RegisterComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,

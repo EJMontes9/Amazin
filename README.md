@@ -28,8 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Installation Dependencies
 ==============
-Installation libraries AOS
-npm install aos --save
+Installation libraries AOS, Tailwindcss and Dependencies
 ==============
-Installation Tailwindcss and Dependencies
+npm install aos --save
 npm install -D tailwindcss postcss autoprefixer

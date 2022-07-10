@@ -9,6 +9,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { SliderComponent } from './Components/slider/slider.component';
+import { AdsStoreComponent } from './Components/ads-store/ads-store.component';
 import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
@@ -16,7 +17,9 @@ import { FooterComponent } from './Components/footer/footer.component';
     AppComponent,
     HeaderComponent,
     SliderComponent,
-    FooterComponent
+    AdsStoreComponent,
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,

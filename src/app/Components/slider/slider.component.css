@@ -48,34 +48,6 @@
   border-radius: 10px;
 }
 
-.valores {
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  border-radius: 2vh;
-  width: 95vw;
-  margin: 5vh auto;
-  display: block;
-  padding: 1vh;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.582);
-}
-
-.ulistaValores {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.icon {
-  width: 6vh;
-  height: 6vh;
-  margin: 0 auto;
-}
-
-.liconos {
-  font-family: "Roboto Slab", serif;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 /*Responsive div valores*/
 @media (max-width: 915px) {
   .imagen {
@@ -88,12 +60,5 @@
 
   .containers {
     font-size: 5vw;
-  }
-}
-
-@media (max-width: 760px) {
-  /*Eliminar div valores*/
-  .valores {
-    display: none;
   }
 }

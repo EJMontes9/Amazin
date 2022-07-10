@@ -12,7 +12,6 @@ export class FAQComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
 
 
 }

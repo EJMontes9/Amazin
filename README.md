@@ -31,4 +31,5 @@ Installation Dependencies
 Installation libraries AOS, Tailwindcss and Dependencies
 ==============
 npm install aos --save
+  
 npm install -D tailwindcss postcss autoprefixer

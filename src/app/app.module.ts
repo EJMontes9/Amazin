@@ -14,6 +14,7 @@ import { LoginComponent } from './Components/login/login.component';
 import { FAQComponent } from './Components/faq/faq.component';
 import { AdsStoreComponent } from './Components/ads-store/ads-store.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { HomeComponent } from './Components/home/home.component';
 
 
 
@@ -28,6 +29,7 @@ import { FooterComponent } from './Components/footer/footer.component';
     LoginComponent,
     AdsStoreComponent,
     FooterComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

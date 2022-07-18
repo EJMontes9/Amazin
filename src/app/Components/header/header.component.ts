@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public active : boolean = false
+  NameEnterprise : string = 'Amazing';
   constructor() {}
   ngOnInit(): void {}
 

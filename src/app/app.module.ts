@@ -15,6 +15,9 @@ import { FAQComponent } from './Components/faq/faq.component';
 import { AdsStoreComponent } from './Components/ads-store/ads-store.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 
@@ -29,7 +32,7 @@ import { HomeComponent } from './Components/home/home.component';
     LoginComponent,
     AdsStoreComponent,
     FooterComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,10 @@ import { HomeComponent } from './Components/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

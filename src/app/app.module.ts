@@ -15,6 +15,7 @@ import { FAQComponent } from './Components/faq/faq.component';
 import { AdsStoreComponent } from './Components/ads-store/ads-store.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
+import { ShopCartComponent } from './Components/shop-cart/shop-cart.component';
 
 
 
@@ -30,6 +31,7 @@ import { HomeComponent } from './Components/home/home.component';
     AdsStoreComponent,
     FooterComponent,
     HomeComponent,
+    ShopCartComponent,
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,7 @@ import { HomeComponent } from './Components/home/home.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { ContacUsComponent } from './Components/contac-us/contac-us.component';
 
 
 
@@ -32,7 +33,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     LoginComponent,
     AdsStoreComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ContacUsComponent
   ],
   imports: [
     BrowserModule,

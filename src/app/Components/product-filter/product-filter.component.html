@@ -20,7 +20,7 @@
 <div class="bg-white">
     <div>
 
-        <div class="relative z-40 hidden" id="FilterResponsive"role="dialog" aria-modal="true">
+        <div class="relative z-40 hidden" id="FilterSection" role="dialog" aria-modal="true">
 
             <div class="fixed inset-0 bg-black bg-opacity-25"></div>
 
@@ -30,7 +30,7 @@
                     class="ml-auto relative max-w-xs w-full h-full bg-white shadow-xl py-4 pb-12 flex flex-col overflow-y-auto">
                     <div class="px-4 flex items-center justify-between">
                         <h2 class="text-lg font-medium text-gray-900">Filtros</h2>
-                        <button type="button"  
+                        <button type="button" (click)="ShowHideResponsive()"
                             class="-mr-2 w-10 h-10 bg-white p-2 rounded-md flex items-center justify-center text-gray-400">
                             <span class="sr-only">Cerrar menu</span>
                             <!-- Heroicon name: outline/x -->
@@ -79,9 +79,9 @@
   
                         Heroicon name: solid/plus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5" id="CSResponsive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="HiddenColorsR()"
                                                 d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -90,9 +90,9 @@
   
                         Heroicon name: solid/minus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5 hidden" id="CHResponsive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="HiddenColorsR()"
                                                 d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -100,7 +100,7 @@
                                 </button>
                             </h3>
                             <!-- Filter section, show/hide based on section state. -->
-                            <div class="pt-6" id="filter-section-mobile-0">
+                            <div class="pt-6 hidden" id="CResponsive">
                                 <div class="space-y-6">
                                     <div class="flex items-center">
                                         <input id="filter-mobile-color-0" name="color[]" value="white" type="checkbox"
@@ -161,9 +161,9 @@
   
                         Heroicon name: solid/plus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5" id="CtSResponive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="CategoriesR()"
                                                 d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -172,9 +172,9 @@
   
                         Heroicon name: solid/minus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5 hidden" id="CtHResponsive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="CategoriesR()"
                                                 d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -182,7 +182,7 @@
                                 </button>
                             </h3>
                             <!-- Filter section, show/hide based on section state. -->
-                            <div class="pt-6" id="filter-section-mobile-1">
+                            <div class="pt-6 hidden" id="CtResponsive">
                                 <div class="space-y-6">
                                     <div class="flex items-center">
                                         <input id="filter-mobile-category-0" name="category[]" value="new-arrivals"
@@ -240,9 +240,9 @@
   
                         Heroicon name: solid/plus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5" id="SSResponive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="SizesR()"
                                                 d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -251,9 +251,9 @@
   
                         Heroicon name: solid/minus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5 hidden" id="SHResponsive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="SizesR()" 
                                                 d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -261,7 +261,7 @@
                                 </button>
                             </h3>
                             <!-- Filter section, show/hide based on section state. -->
-                            <div class="pt-6" id="filter-section-mobile-2">
+                            <div class="pt-6 hidden" id="SResponsive">
                                 <div class="space-y-6">
                                     <div class="flex items-center">
                                         <input id="filter-mobile-size-0" name="size[]" value="2l" type="checkbox"
@@ -345,7 +345,8 @@
                   From: "transform opacity-100 scale-100"
                   To: "transform opacity-0 scale-95"
               -->
-                        <div id="FilterMenu" class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                        <div id="FilterMenu"
+                            class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
                             role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                             <div class="py-1" role="none">
                                 <!--
@@ -371,16 +372,9 @@
                         </div>
                     </div>
 
-                    <button type="button" class="p-2 -m-2 ml-5 sm:ml-7 text-gray-400 hover:text-gray-500">
-                        <span class="sr-only">View grid</span>
-                        <!-- Heroicon name: solid/view-grid -->
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path
-                                d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-                        </svg>
-                    </button>
-                    <button type="button" (click)="MenuFilterResponsive()" class="p-2 -m-2 ml-4 sm:ml-6 text-gray-400 hover:text-gray-500 lg:hidden">
+
+                    <button type="button" (click)="ShowHideResponsive()"
+                        class="p-2 -m-2 ml-4 sm:ml-6 text-gray-400 hover:text-gray-500 lg:hidden">
                         <span class="sr-only">Filters</span>
                         <!-- Heroicon name: solid/filter -->
                         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -393,13 +387,13 @@
                 </div>
             </div>
 
-            <section aria-labelledby="products-heading"  class="pt-6 pb-24">
+            <section aria-labelledby="products-heading" class="pt-6 pb-24">
                 <h2 id="products-heading" class="sr-only">Products</h2>
 
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-x-8 gap-y-10">
                     <!-- Filters -->
                     <form class="hidden lg:block">
-                        <h3 class="sr-only">Categories</h3>
+                        <h3 class="sr-only">Categorias</h3>
                         <ul role="list"
                             class="text-sm font-medium text-gray-900 space-y-4 pb-6 border-b border-gray-200">
                             <li>
@@ -423,7 +417,7 @@
                             </li>
                         </ul>
 
-                        <div id="ShowHide" class="border-b border-gray-200 py-6">
+                        <div class="border-b border-gray-200 py-6">
                             <h3 class="-my-3 flow-root">
                                 <!-- Expand/collapse section button -->
                                 <button type="button"
@@ -436,9 +430,9 @@
   
                         Heroicon name: solid/plus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5" id="ClShow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="HiddenColors()"
                                                 d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -447,9 +441,9 @@
   
                         Heroicon name: solid/minus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5 hidden" id="ClHidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="HiddenColors()"
                                                 d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -457,7 +451,7 @@
                                 </button>
                             </h3>
                             <!-- Filter section, show/hide based on section state. -->
-                            <div class="pt-6" id="filter-section-0">
+                            <div class="pt-6 hidden" id="Colors">
                                 <div class="space-y-4">
                                     <div class="flex items-center">
                                         <input id="filter-color-0" name="color[]" value="white" type="checkbox"
@@ -498,10 +492,10 @@
                             </div>
                         </div>
 
-                        <div class="border-b border-gray-200 py-6">
+                        <div class="border-b  border-gray-200 py-6 " id="Color">
                             <h3 class="-my-3 flow-root">
                                 <!-- Expand/collapse section button -->
-                                <button type="button"  
+                                <button type="button"
                                     class="py-3 bg-white w-full flex items-center justify-between text-sm text-gray-400 hover:text-gray-500"
                                     aria-controls="filter-section-1" aria-expanded="false">
                                     <span class="font-medium text-gray-900"> Category </span>
@@ -511,20 +505,21 @@
   
                         Heroicon name: solid/plus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5" id="CtShow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            bo
+                                            <path fill-rule="evenodd" (click)="Categories()"   
                                                 d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                                                clip-rule="evenodd" />
+                                                clip-rule="evenodd"  />
                                         </svg>
                                         <!--
                         Collapse icon, show/hide based on section open state.
   
                         Heroicon name: solid/minus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5 hidden" id="CtHidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="Categories()"  
                                                 d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -532,20 +527,22 @@
                                 </button>
                             </h3>
                             <!-- Filter section, show/hide based on section state. -->
-                            <div class="pt-6" id="filter-section-1">
+                            <div class="pt-6 hidden" id="Categories">
                                 <div class="space-y-4">
                                     <div class="flex items-center">
                                         <input id="filter-category-0" name="category[]" value="new-arrivals"
                                             type="checkbox"
                                             class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500">
-                                        <label for="filter-category-0" class="ml-3 text-sm text-gray-600"> Nuevos Productos
+                                        <label for="filter-category-0" class="ml-3 text-sm text-gray-600"> Nuevos
+                                            Productos
                                         </label>
                                     </div>
 
                                     <div class="flex items-center">
                                         <input id="filter-category-1" name="category[]" value="sale" type="checkbox"
                                             class="h-4 w-4 border-gray-300 rounded text-indigo-600 focus:ring-indigo-500">
-                                        <label for="filter-category-1" class="ml-3 text-sm text-gray-600"> En venta </label>
+                                        <label for="filter-category-1" class="ml-3 text-sm text-gray-600"> En venta
+                                        </label>
                                     </div>
 
                                     <div class="flex items-center">
@@ -588,9 +585,9 @@
   
                         Heroicon name: solid/plus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5" id="SzShow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd " (click)="Sizes()"
                                                 d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -599,9 +596,9 @@
   
                         Heroicon name: solid/minus-sm
                       -->
-                                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        <svg class="h-5 w-5 hidden" id="SzHidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                             fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd"
+                                            <path fill-rule="evenodd" (click)="Sizes()"
                                                 d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
                                                 clip-rule="evenodd" />
                                         </svg>
@@ -609,7 +606,7 @@
                                 </button>
                             </h3>
                             <!-- Filter section, show/hide based on section state. -->
-                            <div class="pt-6" id="filter-section-2">
+                            <div class="pt-6 hidden" id="Sizes">
                                 <div class="space-y-4">
                                     <div class="flex items-center">
                                         <input id="filter-size-0" name="size[]" value="2l" type="checkbox"
@@ -652,182 +649,177 @@
                     </form>
 
                     <!-- Product grid -->
-                    
+
                     <div class="lg:col-span-3">
                         <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                             <div class="group relative">
                                 <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                                 </div>
                                 <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
                                 </div>
-                              </div>
-                              
-                              <div class="group relative">
-                                <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
-                                </div>
-                                <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
-                                </div>
-                              </div>
+                            </div>
 
-                              <div class="group relative">
+                            <div class="group relative">
                                 <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                                 </div>
                                 <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
                                 </div>
-                              </div>
+                            </div>
 
-                              <div class="group relative">
+                            <div class="group relative">
                                 <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                                 </div>
                                 <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
                                 </div>
-                              </div>
+                            </div>
 
-                              <div class="group relative">
+                            <div class="group relative">
                                 <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                                 </div>
                                 <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
                                 </div>
-                              </div>
+                            </div>
 
-                              <div class="group relative">
+                            <div class="group relative">
                                 <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                                 </div>
                                 <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
                                 </div>
-                              </div>
+                            </div>
 
-                              <div class="group relative">
+                            <div class="group relative">
                                 <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                                 </div>
                                 <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
                                 </div>
-                              </div>
+                            </div>
 
-                              <div class="group relative">
+                            <div class="group relative">
                                 <div
-                                  class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                                  <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    alt="Front of men&#039;s Basic Tee in black."
-                                    class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
                                 </div>
                                 <div class="mt-4 flex justify-between">
-                                  <div>
-                                    <h3 class="text-sm text-gray-700">
-                                      <a routerLink="/ProductOverviews">
-                                        <span aria-hidden="true" class="absolute inset-0"></span>
-                                        Blusa de algodón de manga corta
-                                      </a>
-                                    </h3>
-                                    <p class="mt-1 text-sm text-gray-500">Beige</p>
-                                  </div>
-                                  <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
                                 </div>
-                              </div>
-                              
+                            </div>
+
+                            <div class="group relative">
+                                <div
+                                    class="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                                    <img src="https://images.unsplash.com/photo-1630643003424-f179381f0561?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                        alt="Front of men&#039;s Basic Tee in black."
+                                        class="w-full h-full object-center object-cover lg:w-full lg:h-full">
+                                </div>
+                                <div class="mt-4 flex justify-between">
+                                    <div>
+                                        <h3 class="text-sm text-gray-700">
+                                            <a routerLink="/ProductOverviews">
+                                                <span aria-hidden="true" class="absolute inset-0"></span>
+                                                Blusa de algodón de manga corta
+                                            </a>
+                                        </h3>
+                                        <p class="mt-1 text-sm text-gray-500">Beige</p>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900">$35,99</p>
+                                </div>
+                            </div>
                         </div>
-                        <!-- Replace with your content -->
-                        
-                        
-                        <!-- /End replace -->
                     </div>
                 </div>
             </section>

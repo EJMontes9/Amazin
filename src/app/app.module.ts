@@ -15,8 +15,6 @@ import { FAQComponent } from './Components/faq/faq.component';
 import { AdsStoreComponent } from './Components/ads-store/ads-store.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
-import { ProductListsComponent } from './Components/product-lists/product-lists.component';
-import { ProductOverviewsComponent } from './Components/product-overviews/product-overviews.component';
 import { ProductFilterComponent } from './Components/product-filter/product-filter.component';
 
 
@@ -33,8 +31,6 @@ import { ProductFilterComponent } from './Components/product-filter/product-filt
     AdsStoreComponent,
     FooterComponent,
     HomeComponent,
-    ProductListsComponent,
-    ProductOverviewsComponent,
     ProductFilterComponent,
   ],
   imports: [

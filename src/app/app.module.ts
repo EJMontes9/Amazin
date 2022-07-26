@@ -15,6 +15,7 @@ import { FAQComponent } from './Components/faq/faq.component';
 import { AdsStoreComponent } from './Components/ads-store/ads-store.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { HomeComponent } from './Components/home/home.component';
+import { ProductFilterComponent } from './Components/product-filter/product-filter.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
@@ -34,7 +35,8 @@ import { ProductDetailsComponent } from './Components/product-details/product-de
     AdsStoreComponent,
     FooterComponent,
     HomeComponent,
-    ContacUsComponent
+    ProductFilterComponent,
+    ContacUsComponent,
     ProductDetailsComponent,
   ],
   imports: [

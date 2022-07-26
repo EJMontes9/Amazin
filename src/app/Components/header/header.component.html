@@ -5,7 +5,7 @@
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <a href="#">
           <span class="sr-only">Workflow</span>
-          <h1 class="Logo">Amazing</h1>
+          <h1 class="Logo">{{NameEnterprise}}</h1>
         </a>
       </div>
       <div class="-mr-2 -my-2 md:hidden">
@@ -42,13 +42,13 @@
               From: "opacity-100 translate-y-0"
               To: "opacity-0 translate-y-1"
           -->
-          <div id="MenuFeatures" class="hidden absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+          <div id="MenuFeatures" class="hidden absolute z-20 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                <a routerLink="/ProductLists" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                   <!-- Heroicon name: outline/chart-bar -->
                   <svg style="height: 25px; width: 25px; color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="100%" height="100%" fill="#ffffff"></rect><path d="M192,120h27.1a7.9,7.9,0,0,0,7.1-4.4l18.4-36.8a8.1,8.1,0,0,0-3.2-10.6L192,40" fill="#ffffff" stroke="#4f46e5" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path><path d="M64,120H36.9a7.9,7.9,0,0,1-7.1-4.4L11.4,78.8a8.1,8.1,0,0,1,3.2-10.6L64,40" fill="#ffffff" stroke="#4f46e5" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path><path d="M160,40a32,32,0,0,1-64,0H64V208a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V40Z" fill="#ffffff" stroke="#4f46e5" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path></svg>
-                  <div class="ml-4">
+                  <div  class="ml-4">
                     <p class="text-base font-medium text-gray-900">Blusas</p>
                     <p class="mt-1 text-sm text-gray-500">Moda y estilo necesario para vivir</p>
                   </div>
@@ -116,7 +116,7 @@
               To: "opacity-0 translate-y-1"
           -->
           <div id="MenuHelp"
-          class="hidden absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
+          class="hidden absolute z-20 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
             <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                 <a routerLink="/FAQ" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
@@ -161,7 +161,7 @@
       From: "opacity-100 scale-100"
       To: "opacity-0 scale-95"
   -->
-  <div id="MenuOptions" class="hidden absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-10">
+  <div id="MenuOptions" class="hidden absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-20">
     <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
       <div class="pt-5 pb-6 px-5">
         <div class="flex items-center justify-between">
@@ -180,7 +180,7 @@
         </div>
         <div class=" himt-6">
           <nav class="grid gap-y-8 mt-6">
-            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+            <a routerLink="/ProductLists" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
               <!-- Heroicon name: outline/chart-bar -->
               <svg style="height: 25px; width: 25px; color: rgb(255, 255, 255);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="100%" height="100%" fill="#ffffff"></rect><path d="M192,120h27.1a7.9,7.9,0,0,0,7.1-4.4l18.4-36.8a8.1,8.1,0,0,0-3.2-10.6L192,40" fill="#ffffff" stroke="#4f46e5" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path><path d="M64,120H36.9a7.9,7.9,0,0,1-7.1-4.4L11.4,78.8a8.1,8.1,0,0,1,3.2-10.6L64,40" fill="#ffffff" stroke="#4f46e5" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path><path d="M160,40a32,32,0,0,1-64,0H64V208a8,8,0,0,0,8,8H184a8,8,0,0,0,8-8V40Z" fill="#ffffff" stroke="#4f46e5" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path></svg>
               <span class="ml-3 text-base font-medium text-gray-900"> Blusa </span>
@@ -211,10 +211,10 @@
           <a routerLink="/Contactanos" class="text-base font-medium text-gray-900 hover:text-gray-700"> Contáctanos </a>
         </div>
         <div>
-          <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Registrarse </a>
+          <a routerLink="/Register" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Registrarse </a>
           <p class="mt-6 text-center text-base font-medium text-gray-500">
             Ya tienes una cuenta?
-            <a href="#" class="text-indigo-600 hover:text-indigo-500"> Iniciar Sesión </a>
+            <a routerLink="/Login" class="text-indigo-600 hover:text-indigo-500"> Iniciar Sesión </a>
           </p>
         </div>
       </div>

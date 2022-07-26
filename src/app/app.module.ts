@@ -19,7 +19,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ContacUsComponent } from './Components/contac-us/contac-us.component';
-
+import { ProductDetailsComponent } from './Components/product-details/product-details.component';
 
 
 @NgModule({
@@ -35,6 +35,7 @@ import { ContacUsComponent } from './Components/contac-us/contac-us.component';
     FooterComponent,
     HomeComponent,
     ContacUsComponent
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

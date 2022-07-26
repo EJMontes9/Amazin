@@ -26,8 +26,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-Installation libraries AOS, Tailwindcss and Dependencies
+Installing dependencies
 ==============
 npm install aos --save
   
 npm install -D tailwindcss postcss autoprefixer
+
+ng add @angular/material

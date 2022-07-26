@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./purchasing-process.component.css']
 })
 export class PurchasingProcessComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
+
   }
+
 
 }

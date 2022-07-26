@@ -1,12 +1,14 @@
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
 
-<div class="min-w-screen min-h-screen  flex items-center justify-center">
-    <div class="absolute -z-10 scale-x-125 blur-sm p-0 max-w-none  object-cover lg:grid hidden">
+<app-header></app-header>
+
+<div class="min-w-screen min-h-screen  flex items-center justify-center bg-indigo-500 lg:bg-inherit">
+    <div class="absolute -z-10 scale-x-125 blur-sm p-0 max-w-none  object-cover lg:grid hidden ">
         <img src="https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
             alt="">
     </div>
-    <div class="position:absolute z-0 bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden"
+    <div class="position:absolute z-0 bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden m-9"
         style="max-width:1000px">
         <div class="lg:flex w-full">
             <div class="lg:block w-1/2 lg:align-middle  bg-indigo-500 hidden">

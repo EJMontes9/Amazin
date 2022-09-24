@@ -22,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { ContacUsComponent } from './Components/contac-us/contac-us.component';
 import { ProductDetailsComponent } from './Components/product-details/product-details.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './Components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { ProductDetailsComponent } from './Components/product-details/product-de
     ProductFilterComponent,
     ContacUsComponent,
     ProductDetailsComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +52,8 @@ import { ProductDetailsComponent } from './Components/product-details/product-de
     MatButtonModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

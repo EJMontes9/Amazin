@@ -20,7 +20,7 @@
                     <h1 class="font-bold text-3xl text-gray-900">Contáctate con Nosotros</h1>
                     <p>Evíanos tus sugerencias o dudas</p>
                 </div>
-                <form action="">
+                <form [formGroup]="form" (ngSubmit)="insertContacto()">
                     <div>
                         <div class="flex -mx-3">
                             <div class="w-full px-3 mb-5">
@@ -31,7 +31,7 @@
                                         <i class="mdi mdi-account text-gray-400 text-lg"></i>
 
                                     </div>
-                                    <input type="text"
+                                    <input type="text" formControlName="Nombres" id="Nombres" required
                                         class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                                         placeholder="José Perez Murillo">
                                 </div>
@@ -45,7 +45,7 @@
                                         class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                         <i class="mdi mdi-cellphone-android text-gray-400 text-lg"></i>
                                     </div>
-                                    <input type="tel"
+                                    <input type="tel" formControlName="Telefono" required
                                         class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                                         placeholder="0987654321">
                                 </div>
@@ -59,7 +59,7 @@
                                         class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                         <i class="mdi mdi-email-outline text-gray-400 text-lg"></i>
                                     </div>
-                                    <input type="email"
+                                    <input type="email" formControlName="Correo" required
                                         class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                                         placeholder="josemurillo@example.com">
                                 </div>
@@ -73,9 +73,9 @@
                                         class="w-10 z-10 pl-1 text-center pointer-events-none flex place-items-center justify-center">
                                         <i class="mdi mdi-message text-gray-400 text-lg"></i>
                                     </div>
-                                    <textarea
+                                    <textarea formControlName="Mensaje" required
                                         class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
-                                        name="message" id="message" cols="30" rows="4"
+                                        name="message" id="message"
                                         placeholder="Escriba aquí sus sugerencias o dudas..."></textarea>
                                 </div>
                             </div>

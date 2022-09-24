@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   public active : boolean = false
   NameEnterprise : string = 'Amazing';
-  constructor() {}
+  
+  constructor(private service:AuthService) {}
   ngOnInit(): void {}
 
   MenuMorefuction() : void{
@@ -25,4 +27,20 @@ export class HeaderComponent implements OnInit {
     const nav = ((document.querySelector('#MenuOptions')) as HTMLElement)
     nav.classList.toggle('hidden')
   }
+
+  //comprobar si hay un token
+  get isAutencticated(){
+    return !!localStorage.getItem('token_value');
+  }
+
+  //obtener el nombre de usuario
+  get getUsername(){
+    return localStorage.getItem('userName');
+  }
+
+  //cerrar sesion
+  salir(){
+    this.service.logout();
+  }
+
 }
